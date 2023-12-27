@@ -36,7 +36,14 @@ func handleRequest(w http.ResponseWriter, r *http.Request) {
 	decoder := json.NewDecoder(r.Body)
 	err := decoder.Decode(&requestBody)
 	if err != nil {
-		http.Error(w, "Invalid JSON format", http.StatusBadRequest)
+		errorResponse := ResponseBody{
+			Status:  "400",
+			Message: "Invalid JSON value(String)",
+		}
+
+		w.Header().Set("Content-Type", "application/json")
+		w.WriteHeader(http.StatusBadRequest)
+		json.NewEncoder(w).Encode(errorResponse)
 		return
 	}
 
@@ -44,7 +51,7 @@ func handleRequest(w http.ResponseWriter, r *http.Request) {
 	if requestBody.Message == "" {
 		errorResponse := ResponseBody{
 			Status:  "400",
-			Message: "Invalid JSON message",
+			Message: "Invalid JSON key(message)",
 		}
 
 		w.Header().Set("Content-Type", "application/json")
