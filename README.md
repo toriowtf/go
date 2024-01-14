@@ -43,4 +43,5 @@ This is a simple web application that demonstrates a registration page using Go 
 3. Enter a username and password in the registration form and submit.
 4. The registration data will be stored in the MongoDB database.
 
-![alt text](http://url/to/img.png)
+![1](https://cdn.discordapp.com/attachments/837294904203411487/1196122725832462387/Screenshot_1.png?ex=65b67b18&is=65a40618&hm=6187e58c91cf700439e90dde7bba93b7798afccce4a857f26a11570c57f42062&)
+![2](https://cdn.discordapp.com/attachments/837294904203411487/1196122726176407603/Screenshot_2.png?ex=65b67b18&is=65a40618&hm=a0c25deb14b56e5d69f49e5bbe711f3a938709b64e0f84dc5147b8769dc2558b&)
