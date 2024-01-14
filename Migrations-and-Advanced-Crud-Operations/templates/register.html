@@ -1,0 +1,50 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>/* style.css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        
+        a {
+            display: block;
+            margin-top: 10px;
+        }
+        </style>
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="/register" method="post">
+        <!-- Add your registration form fields here -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <input type="submit" value="Register">
+    </form>
+    <a href="/">Back to Home</a>
+</body>
+</html>
