@@ -21,11 +21,11 @@ This is a simple web application that demonstrates a registration page using Go 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/registration-app.git
+   git clone https://github.com/toriowtf/go.git
    ```
 2. **Navigate to the project directory:**
    ```bash
-   cd registration-app
+   cd Migrations-and-Advanced-Crud-Operations
    ```
 3. **Install the necessary Go packages:**
    ```bash
